@@ -1,9 +1,9 @@
 package concurrency.stock.facade;
 
 import concurrency.stock.service.OptimisticLockStockService;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 public class OptimisticLockStockFacade {
 
     private OptimisticLockStockService optimisticLockStockService;
