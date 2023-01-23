@@ -59,11 +59,11 @@ class StockServiceTest {
             });
         }
 
-            latch.await();
+        latch.await();
 
-            Stock stock = stockRepository.findById(1L).orElseThrow();
+        Stock stock = stockRepository.findById(1L).orElseThrow();
 
-            assertEquals(0, stock.getQuantity());
+        assertEquals(0, stock.getQuantity());
     }
 
 
